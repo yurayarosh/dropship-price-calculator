@@ -1,0 +1,39 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#App {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  > div {
+    margin-bottom: 1rem;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+
+  input {
+    height: 30px;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 0.3rem;
+  }
+}
+
+dl {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+
+  dt {
+    font-weight: 700;
+  }
+}
