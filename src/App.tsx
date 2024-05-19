@@ -45,7 +45,7 @@ function App() {
             type="number"
             name="product-cost"
             id="product-cost"
-            min={0}
+            min="0"
             value={productCost}
             onChange={e => setProductCost(e.target.value)}
           />
@@ -57,7 +57,7 @@ function App() {
             name="fees"
             id="fees"
             value={ebayFee}
-            min={0}
+            min="0"
             onChange={e => setEbayFee(e.target.value)}
           />
         </div>
@@ -68,7 +68,8 @@ function App() {
             name="fee-ammount"
             id="fee-ammount"
             value={fixedTransactionFee}
-            min={0}
+            min="0"
+            step="0.1"
             onChange={e => setFixedTransactionFee(e.target.value)}
           />
         </div>
@@ -95,9 +96,9 @@ function App() {
       </form>
 
       <dl>
-        <dt>Break even profit:</dt>
+        <dt>Break even profit, $:</dt>
         <dd>{breakevenProfit.toFixed(2)}</dd>
-        <dt>Sold price:</dt>
+        <dt>Sold price, $:</dt>
         <dd>{soldPrice.toFixed(2)}</dd>
         <dt>Profit, $:</dt>
         <dd>{profitAmount.toFixed(2)}</dd>
