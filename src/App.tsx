@@ -13,7 +13,8 @@ function App() {
     return (
       (Number(productCost) +
         Number(fixedTransactionFee) +
-        ((Number(productCost) * percentagePrf) / 100) + dollarPrf) /
+        (Number(productCost) * percentagePrf) / 100 +
+        dollarPrf) /
       (1 - Number(ebayFee) / 100)
     );
   };
